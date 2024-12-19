@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ex="http://www.area.com/ontologies/area_shapes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#Square">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.area.com/ontologies/area_shapes.owl#Shape"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#hasLength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.area.com/ontologies/area_shapes.owl#Rectangle"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#hasWidth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.area.com/ontologies/area_shapes.owl#Rectangle"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#hasBase">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.area.com/ontologies/area_shapes.owl#Triangle"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#ExampleTriangle1">
+    <rdf:type rdf:resource="http://www.area.com/ontologies/area_shapes.owl#Triangle"/>
+    <ex:hasBase rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</ex:hasBase>
+    <ex:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</ex:hasHeight>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#Triangle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.area.com/ontologies/area_shapes.owl#Shape"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#ExampleRectangle1">
+    <rdf:type rdf:resource="http://www.area.com/ontologies/area_shapes.owl#Rectangle"/>
+    <ex:hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</ex:hasLength>
+    <ex:hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</ex:hasWidth>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#hasHeight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.area.com/ontologies/area_shapes.owl#Triangle"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#ExampleSquare1">
+    <rdf:type rdf:resource="http://www.area.com/ontologies/area_shapes.owl#Square"/>
+    <ex:hasSide rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</ex:hasSide>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#Rectangle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.area.com/ontologies/area_shapes.owl#Shape"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#Shape">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.area.com/ontologies/area_shapes.owl#hasSide">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.area.com/ontologies/area_shapes.owl#Square"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+</rdf:RDF>
